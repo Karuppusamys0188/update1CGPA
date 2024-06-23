@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="cgpastyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        <div class="form-group">
+            <label for="completedCredits">Credits Completed Up to Last Sem:</label>
+            <input type="number" id="completedCredits" class="input-field" min="0">
+        </div>
+        <div class="form-group">
+            <label for="lastCgpa">CGPA Up to Last Sem:</label>
+            <input type="number" id="lastCgpa" class="input-field" step="0.01" min="0" max="10">
+        </div>
+        <div class="form-group">
+            <label for="currentCredits">Current Sem Credits:</label>
+            <input type="number" id="currentCredits" class="input-field" min="0">
+        </div>
+        <div class="form-group">
+            <label for="currentGpa">GPA of Current Sem:</label>
+            <input type="number" id="currentGpa" class="input-field" step="0.01" min="0" max="10">
+        </div>
+        <button class="button" onclick="calculateCgpa()">Calculate CGPA</button>
+        <div class="result" id="result-container">
+            <h2>Your CGPA is: <span id="cgpaResult"></span></h2>
+        </div>
+        <div class="error" id="error-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="gpastyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPA Calculator</h1>
+        <div id="course-inputs">
+            <input type="number" step="1" class="input-field" id="num-courses" placeholder="Enter number of courses" min="1">
+            <button class="button" onclick="generateCourseInputs()">Submit</button>
+        </div>
+        <div id="courses-container"></div>
+        <button class="button" style="display:none;" id="calculate-button" onclick="calculateGPA()">Calculate GPA</button>
+        <p id="result" class="result"></p>
+        <p id="error" class="error"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
